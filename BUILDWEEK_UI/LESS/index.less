@@ -2,8 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+//add-ons to file
 @import "mixins.less";
+
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -69,6 +71,105 @@ body {
 	a {
 		text-decoration: none;
 		color: @text;
+		
 	}
 
 }
+
+
+//Homepage -------------->
+.homeContainer {
+	width: 100%;
+	display: block;
+	position: relative;
+	padding: relative;
+}
+
+section {
+	display: flex;
+
+	.photos {
+		width: 50%;
+	}
+	.halfPage {
+ justify-content: flex-end;
+ width: 50%;
+ height: 50rem;
+ background-color: @CESBlue;
+
+ padding-top: 10rem;
+ 
+		
+	}
+	.homePageh1 {
+		color: @text;
+		font-family: @markerFont;
+		font-size: 5rem;
+		position: relative;
+	  bottom: 2rem;
+		margin-left: 4%;
+		  }
+		  
+	
+}
+
+//Homepage textBoxes
+
+.textBox {
+	font-family: @font;
+margin-left: 4%;
+
+	
+
+}
+
+// Homepage Animations
+.homeAnimation1 {
+	animation-name: fade;
+		animation-duration: 1s;
+		@keyframes fade {
+			from { opacity: 0;
+			  color: white;
+			}
+			to { opacity: 1;
+			  color: @CESBlue;
+			}
+			}
+}
+
+
+.fader {
+
+	animation-name: fade2;
+		animation-duration: 2s;
+		@keyframes fade2 {
+			from { opacity: 0;
+			  color: whitesmoke;
+			}
+			to { opacity: 1;
+			  color: @text;;
+			}
+			}
+}
+.slider {
+	
+	animation-name: slide;
+	animation-duration: 1s;
+	
+	@keyframes slide {
+		from {
+			margin-left: .5%;
+			width: 300%; 
+		}
+		
+		to {
+			margin-left: 0%;
+			width: 100%;
+		}
+		}
+}
+
+
+
+/*font 
+font-family: 'Open Sans', sans-serif;*/

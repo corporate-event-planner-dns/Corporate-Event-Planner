@@ -141,8 +141,84 @@ body {
   justify-content: center;
 }
 .homeNav .menu-btn {
-  display: flex;
   height: 70%;
-  align-self: flex-start;
-  justify-content: flex-start;
 }
+.homeNav a {
+  text-decoration: none;
+  color: #050A1D;
+}
+.homeContainer {
+  width: 100%;
+  display: block;
+  position: relative;
+  padding: relative;
+}
+section {
+  display: flex;
+}
+section .photos {
+  width: 50%;
+}
+section .halfPage {
+  justify-content: flex-end;
+  width: 50%;
+  height: 50rem;
+  background-color: #3776ab;
+  padding-top: 10rem;
+}
+section .homePageh1 {
+  color: #050A1D;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5rem;
+  position: relative;
+  bottom: 2rem;
+  margin-left: 4%;
+}
+.textBox {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 4%;
+}
+.homeAnimation1 {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    color: white;
+  }
+  to {
+    opacity: 1;
+    color: #3776ab;
+  }
+}
+.fader {
+  animation-name: fade2;
+  animation-duration: 2s;
+}
+@keyframes fade2 {
+  from {
+    opacity: 0;
+    color: whitesmoke;
+  }
+  to {
+    opacity: 1;
+    color: #050A1D;
+  }
+}
+.slider {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+@keyframes slide {
+  from {
+    margin-left: 0.5%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/*font 
+font-family: 'Open Sans', sans-serif;*/
