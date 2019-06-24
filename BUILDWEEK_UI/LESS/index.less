@@ -55,49 +55,44 @@ table {
 body {
 	box-sizing: border-box;
 	min-width: 300px;
-    margin: 0;
-}
-
-.homeNav{
-    background-color:@CESBlue;
-    width:100%;
-    height: 50px;
-    .placement;
-
-    .menu-btn{
-        height:70%;
-
-	}
-	a {
-		text-decoration: none;
-		color: @text;
-		
-	}
-
+		margin: 0;
 }
 
 
 //Homepage -------------->
+
 .homeContainer {
-	width: 100%;
-	display: block;
-	position: relative;
-	padding: relative;
+background-color: gray;
+
+	
+}
+//---------> Images
+.mySlides {
+	display: none;
+	
 }
 
+
+
+
+//-----------> Intro section
 section {
 	display: flex;
 
-	.photos {
-		width: 50%;
+	.slideshow-container {
+		width: 55%;
+		display: block;
+		position: relative;
+		height: 100%;
 	}
 	.halfPage {
  justify-content: flex-end;
- width: 50%;
+ width: 38%;
+ height: 41rem;
+ padding-right: 150px;
+ background-color: #eaf4fc;
  height: 50rem;
- background-color: @CESBlue;
-
- padding-top: 10rem;
+ 
  
 		
 	}
@@ -106,28 +101,34 @@ section {
 		font-family: @markerFont;
 		font-size: 5rem;
 		position: relative;
-	  bottom: 2rem;
-		margin-left: 4%;
+		bottom: 2rem;
+		left: 5rem;
+		
+		padding-top: 6.5rem;
 		  }
 		  
 	
 }
 
-//Homepage textBoxes
+//Homepage textBoxes--------->
 
 .textBox {
 	font-family: @font;
-margin-left: 4%;
-
-	
+  
+  position: relative;
+	left:  5rem;
 
 }
+.bold {
+	font-weight: bold !important;
+	
+}
 
-// Homepage Animations
+ //Homepage Animations--------->
 .homeAnimation1 {
-	animation-name: fade;
+	animation-name: fading;
 		animation-duration: 1s;
-		@keyframes fade {
+		@keyframes fading {
 			from { opacity: 0;
 			  color: white;
 			}
@@ -158,8 +159,8 @@ margin-left: 4%;
 	
 	@keyframes slide {
 		from {
-			margin-left: .5%;
-			width: 300%; 
+			margin-left: 10%;
+			width: -150%; 
 		}
 		
 		to {
@@ -167,9 +168,38 @@ margin-left: 4%;
 			width: 100%;
 		}
 		}
+} 
+//Image carousel fade---------->
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.8s;
 }
 
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+//-----------> menu
+.menu1 {
+	display: none;
+	background-color: gray;
+	width: 100%;
+	ul {
+		.placement(space-evenly);
+		display: flex;
+		height: 25px;
+		font-size: 1.8rem !important;
+		font-family: @font;
+		color: @text;
+	}
+}
 
+.show {
+	display: block;
+}
 
-/*font 
-font-family: 'Open Sans', sans-serif;*/

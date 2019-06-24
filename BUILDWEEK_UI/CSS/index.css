@@ -132,39 +132,28 @@ body {
   min-width: 300px;
   margin: 0;
 }
-.homeNav {
-  background-color: #3776ab;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.homeNav .menu-btn {
-  height: 70%;
-}
-.homeNav a {
-  text-decoration: none;
-  color: #050A1D;
-}
 .homeContainer {
-  width: 100%;
-  display: block;
-  position: relative;
-  padding: relative;
+  background-color: gray;
+}
+.mySlides {
+  display: none;
 }
 section {
   display: flex;
 }
-section .photos {
-  width: 50%;
+section .slideshow-container {
+  width: 55%;
+  display: block;
+  position: relative;
+  height: 100%;
 }
 section .halfPage {
   justify-content: flex-end;
-  width: 50%;
+  width: 38%;
+  height: 41rem;
+  padding-right: 150px;
+  background-color: #eaf4fc;
   height: 50rem;
-  background-color: #3776ab;
-  padding-top: 10rem;
 }
 section .homePageh1 {
   color: #050A1D;
@@ -172,24 +161,29 @@ section .homePageh1 {
   font-size: 5rem;
   position: relative;
   bottom: 2rem;
-  margin-left: 4%;
+  left: 5rem;
+  padding-top: 6.5rem;
 }
 .textBox {
   font-family: 'Open Sans', sans-serif;
-  margin-left: 4%;
+  position: relative;
+  left: 5rem;
+}
+.bold {
+  font-weight: bold !important;
 }
 .homeAnimation1 {
-  animation-name: fade;
+  animation-name: fading;
   animation-duration: 1s;
 }
-@keyframes fade {
+@keyframes fading {
   from {
     opacity: 0;
     color: white;
   }
   to {
     opacity: 1;
-    color: #3776ab;
+    color: #A0A0A0;
   }
 }
 .fader {
@@ -212,13 +206,40 @@ section .homePageh1 {
 }
 @keyframes slide {
   from {
-    margin-left: 0.5%;
-    width: 300%;
+    margin-left: 10%;
+    width: -150%;
   }
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
-/*font 
-font-family: 'Open Sans', sans-serif;*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1.8s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu1 {
+  display: none;
+  background-color: gray;
+  width: 100%;
+}
+.menu1 ul {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  height: 25px;
+  font-size: 1.8rem !important;
+  font-family: 'Open Sans', sans-serif;
+  color: #050A1D;
+}
+.show {
+  display: block;
+}

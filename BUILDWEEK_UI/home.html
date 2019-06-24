@@ -4,30 +4,42 @@
   <title>Homepage</title>
   <link rel="stylesheet" href="CSS/index.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker&display=swap" rel="stylesheet">
-
+  <script src="JS/index.js" async></script>
 </head>
 
 
 
 <body>
-    <div class = "container homeContainer">
+    <div class = "container homeContainer fader">
         <header>
-        <nav class="homeNav">
-        <img class="menu-btn" src="Pictures/menu.png">
-        <a href="#">Discover</a>
-        <a href="#">Social</a>
-        <a href="#">Sign Up</a>
-        <a href="#">Contact Us</a>
-        </nav>
+            <nav class ="navClass1">
+                <img class="menuBtn1" src="Pictures/menu.png">
+            </nav>
+            <div class="menu1">
+                    <ul>
+                      <li>Home</li>
+                      <li>About Us</li>
+                      <li>What’s New</li>
+                      <li>Tech Trends</li>
+                      <li>Contact</li>
+                      <li>Log Out</li>
+                    </ul>
+                  </div>
     </header>
 <section class= "intro">
-    <img class= "photos" src="">
+    <div class="slideshow-container">
+     <div class="mySlides fade"><img src="Pictures/six.jpg" style="width: 100%; height: 40rem" ></div>
+     <div class="mySlides fade"><img src="Pictures/eight.jpg" style="width: 100%; height: 40rem"></div>
+     <div class="mySlides fade"><img src="Pictures/seven.jpg" style="width: 100%; height: 40rem"></div>
+     <div class="mySlides fade"><img src="Pictures/four.jpg" style="width: 100%; height: 40rem"></div>
+     <div class="mySlides fade"><img src="Pictures/three.jpg" style="width: 100%; height: 40rem"></div>
+    </div>
     
      <div class="halfPage homeAnimation1">
          <div class="slider">
-         <h1 class="homePageh1 fader">Event<br> Handler</h1>
+         <h1 class="homePageh1 fader">Corporate <br>Event<br> Handler</h1>
          <div class ="textBox fader"> 
-             <p>The event planning application you've been dreaming of is finally here. <a>Learn more</a></p>
+             <p>The powerful event planning app you've been dreaming of is here. <br><a><span class="bold">Learn more</span></a></p>
 
             </div> 
          </div>
