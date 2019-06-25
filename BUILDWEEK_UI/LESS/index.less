@@ -56,14 +56,15 @@ body {
 	box-sizing: border-box;
 	min-width: 300px;
 		margin: 0;
+		
 }
 
 
 //Homepage -------------->
 
 .homeContainer {
-background-color: gray;
-
+//background:linear-gradient(#eaf4fc, gray)
+background:linear-gradient(	#eaf4fc, slategray)
 	
 }
 //---------> Images
@@ -90,21 +91,22 @@ section {
  width: 38%;
  height: 41rem;
  padding-right: 150px;
- background-color: #eaf4fc;
+
  height: 50rem;
  
+
  
 		
 	}
 	.homePageh1 {
 		color: @text;
-		font-family: @markerFont;
-		font-size: 5rem;
+		font-family: 'Rubik Mono One', sans-serif;
+        font-size: 3.5rem;
 		position: relative;
 		bottom: 2rem;
 		left: 5rem;
 		
-		padding-top: 6.5rem;
+		padding-top: 5.5rem;
 		  }
 		  
 	
@@ -114,13 +116,14 @@ section {
 
 .textBox {
 	font-family: @font;
-  
+  font-size: 1.1rem;
   position: relative;
 	left:  5rem;
 
 }
 .bold {
 	font-weight: bold !important;
+	cursor: pointer;
 	
 }
 
@@ -187,19 +190,39 @@ section {
 //-----------> menu
 .menu1 {
 	display: none;
-	background-color: gray;
 	width: 100%;
+	padding-bottom: 1rem;
 	ul {
 		.placement(space-evenly);
 		display: flex;
 		height: 25px;
-		font-size: 1.8rem !important;
+		font-size: 1.3rem !important;
 		font-family: @font;
 		color: @text;
+
+		a {
+			text-decoration: none;
+			color: @text;
+		}
 	}
 }
 
+.textBox2 {
+	display: none;
+	font-family: @font;
+	font-size: 1.1rem;
+	position: relative;
+	left: 80px;
+	top: 70px;
+	border-top: 4px solid #eaf4fc;
+	border-bottom: 4px solid #eaf4fc;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
 .show {
 	display: block;
 }
 
+.cursor {
+	cursor: pointer;
+}

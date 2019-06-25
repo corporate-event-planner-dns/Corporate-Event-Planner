@@ -25,3 +25,16 @@ const menu1 = document.querySelector(".menu1")
 const menuBtn1 = document.querySelector(".menuBtn1")
 
 menuBtn1.addEventListener("click", toggleMenuu)
+
+const toggler = () => {
+  learnMore.classList.toggle("show")
+}
+
+const learnBtn = document.querySelector('.bold')
+
+const learnMore = document.querySelector('.textBox2')
+
+
+
+learnBtn.addEventListener('click', toggler)
+
