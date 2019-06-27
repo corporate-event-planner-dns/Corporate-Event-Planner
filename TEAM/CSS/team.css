@@ -134,6 +134,7 @@ table {
   font-display: swap;
   src: local('Cormorant Medium'), local('Cormorant-Medium'), url(https://fonts.gstatic.com/s/cormorant/v7/H4cgBXOCl9bbnla_nHIiHLiohYa2.ttf) format('truetype');
 }
+@import "../../BUILDWEEK_UI/LESS/mixins.less";
 html {
   font-size: 62.5%;
 }
@@ -167,6 +168,7 @@ header ul a {
 }
 .main {
   display: flex;
+  flex-wrap: nowrap;
   height: 100%;
 }
 .leftNavBar {
@@ -190,6 +192,92 @@ header ul a {
   background-color: #c3c3c3;
   border-radius: 20px;
   cursor: pointer;
+}
+.mainContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mainContent .content {
+  display: flex;
+  width: 100%;
+  height: 30%;
+}
+.mainContent .category {
+  margin: 40px;
+}
+.mainContent .category .state {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.mainContent .category .state .tab {
+  padding: 5px;
+  font-size: 1.4rem;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid black;
+}
+.mainContent .contentContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 10px 0px;
+}
+.mainContent .empHolder {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  display: none;
+}
+.mainContent .empHolder img {
+  height: 90%;
+}
+.mainContent .empHolder h2 {
+  margin: 0% 0% 5% 20%;
+}
+.mainContent .empHolder h3 {
+  font-size: 2rem;
+  margin: 0px 0px 2% 1%;
+}
+.mainContent .empHolder p {
+  padding: 10px;
+}
+.SCP,
+.JCP,
+.CP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SCP .left-button,
+.JCP .left-button,
+.CP .left-button,
+.SCP .right-button,
+.JCP .right-button,
+.CP .right-button {
+  height: 50px;
+  width: 50px;
+  transition: 0.1s;
+  float: left;
+  box-shadow: -2px 2px 0 #1a1a1a;
+  cursor: pointer;
+}
+.SCP .left-button,
+.JCP .left-button,
+.CP .left-button {
+  transform: rotate(45deg);
+}
+.SCP .right-button,
+.JCP .right-button,
+.CP .right-button {
+  transform: rotate(225deg);
 }
 .show {
   display: block;
