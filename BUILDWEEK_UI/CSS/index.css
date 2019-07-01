@@ -127,57 +127,89 @@ table {
   border-spacing: 0;
 }
 /*end of reset code*/
-body {
-  box-sizing: border-box;
-  min-width: 300px;
-  margin: 0;
-}
 .homeContainer {
+  width: 100%;
+  background-color: gray;
   background: linear-gradient(#eaf4fc, slategray);
+  height: 53rem;
 }
-.mySlides {
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  height: 38.5rem;
+}
+.intro .mySlides {
   display: none;
 }
-section {
-  display: flex;
-}
-section .slideshow-container {
-  width: 55%;
-  display: block;
-  position: relative;
-  height: 100%;
-}
-section .halfPage {
-  justify-content: flex-end;
-  width: 38%;
+.intro .halfPage {
   height: 41rem;
-  padding-right: 150px;
-  height: 50rem;
+  padding-top: 3.5rem;
+  padding-left: 50px;
 }
-section .homePageh1 {
-  color: #050A1D;
+.slideshow-container {
+  display: block;
+  height: 50%;
+}
+.homePageh1 {
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 3.5rem;
-  position: relative;
-  bottom: 2rem;
-  left: 5rem;
-  padding-top: 5.5rem;
+  font-size: 3rem;
+}
+h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding-bottom: 3rem;
 }
 .textBox {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
-  position: relative;
-  left: 5rem;
+  justify-content: flex-start;
+  align-content: flex-start;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  padding-bottom: 40px;
 }
-.bold {
-  font-weight: bold !important;
+.homeNav1 {
+  width: 80%;
+  padding-bottom: 2rem;
+  bottom: 35px;
+  margin: 0 auto;
+}
+.homeNav1 ul {
+  display: flex;
+  justify-content: space-around;
+  height: 25px;
+  font-size: 0.9rem !important;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+.homeNav1 ul a {
+  text-decoration: none;
+  color: black;
+}
+.menu1 {
+  display: none;
+}
+.textBox2 {
+  display: none;
+  color: black;
+  font-size: 0.9rem;
+  width: 450px;
+  border-top: 4px solid #eaf4fc;
+  border-bottom: 4px solid #eaf4fc;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+.show {
+  display: block;
+}
+.cursor {
   cursor: pointer;
 }
 .homeAnimation1 {
-  animation-name: fading;
+  animation-name: fade;
   animation-duration: 1s;
 }
-@keyframes fading {
+@keyframes fade {
   from {
     opacity: 0;
     color: white;
@@ -198,7 +230,7 @@ section .homePageh1 {
   }
   to {
     opacity: 1;
-    color: #050A1D;
+    color: black;
   }
 }
 .slider {
@@ -208,58 +240,199 @@ section .homePageh1 {
 @keyframes slide {
   from {
     margin-left: 10%;
-    width: -150%;
+    width: 300%;
   }
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
-.fade {
-  animation-name: fade;
-  animation-duration: 1.8s;
+.show2 {
+  visibility: visible;
 }
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.menu1 {
-  display: none;
+.navClass2 {
   width: 100%;
+  height: 7.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navClass2 img {
+  width: 40px;
+  height: 40px;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.bottomDiv {
+  position: absolute;
+  top: 615px;
+  left: 900px;
+}
+.reviewContainer {
+  background: linear-gradient(#eaf4fc, slategray);
+  height: 90rem;
+}
+/*.midContent {
+      display: flex;
+      justify-content: flex-start;
+    }*/
+.reviewsh1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+}
+.reviewMan {
+  display: block;
+  opacity: 0.8;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.reviewsHeader {
+  height: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 3px solid #eaf4fc;
   padding-bottom: 1rem;
 }
-.menu1 ul {
-  align-items: center;
-  justify-content: space-evenly;
-  display: flex;
-  height: 25px;
-  font-size: 1.3rem !important;
-  font-family: 'Open Sans', sans-serif;
-  color: #050A1D;
+.opacity {
+  opacity: 0.5;
 }
-.menu1 ul a {
-  text-decoration: none;
-  color: #050A1D;
+.topics {
+  display: table;
+  padding-top: 1rem;
+  width: 10%;
+  height: 47px;
+  margin: 0 auto;
 }
-.textBox2 {
-  display: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
-  position: relative;
-  left: 80px;
-  top: 70px;
-  border-top: 4px solid #eaf4fc;
-  border-bottom: 4px solid #eaf4fc;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-.show {
-  display: block;
-}
-.cursor {
+.topics .tab {
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
+  font-size: 1rem;
+}
+.active-tab {
+  opacity: 0.5;
+}
+.cards-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.cards-container p {
+  padding-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+}
+.card {
+  width: 240px;
+  height: 175px;
+  padding: 25px 25px 25px 25px;
+}
+.reviewNav2 {
+  position: absolute;
+  top: 78rem;
+  width: 80%;
+}
+.reviewNav2 .navClass2 {
+  display: flex;
+  justify-content: center;
+}
+.credit {
+  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 85rem;
+}
+.bars {
+  position: relative;
+  left: 750px;
+  bottom: 90px;
+  width: 90px;
+  height: 90px;
+}
+.reviewimg {
+  border-radius: 50%;
+  border: 2px solid slategray;
+}
+@media (max-width: 800px) {
+  body {
+    overflow-X: hidden;
+  }
+  .homeContainer {
+    height: 56rem;
+  }
+  .slideshow-container {
+    display: none;
+  }
+  ul {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  li {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  .slider {
+    animation-name: none;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 8.5rem;
+  }
+  .homePageh1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .textBox2 {
+    display: block;
+    padding-top: 10px;
+  }
+  .bottomDiv {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    top: 35rem;
+    left: -17rem;
+    height: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .slider {
+    position: relative;
+    left: -1rem;
+  }
+  .bottomDiv {
+    position: relative;
+    left: -26rem;
+  }
+}
+@media (max-width: 800px) {
+  .reviewMan {
+    display: none;
+  }
+  .reviewsHeader {
+    padding-top: 5rem;
+  }
+  .bars {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .reviewContainer {
+    height: 113rem;
+  }
+  .reviewNav2 {
+    position: relative;
+    top: 3rem;
+  }
+  .credit {
+    position: relative;
+    top: 3rem;
+  }
 }
