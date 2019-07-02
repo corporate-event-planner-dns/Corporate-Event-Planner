@@ -60,6 +60,10 @@ header{
         border-radius: 20px;
         cursor:pointer;
     }
+    @media(min-width: 500px){
+        width:500px;
+        height:100%;
+    }
 }   
 
 .mainContent{
@@ -73,22 +77,6 @@ header{
         height: 30%;
     }
 
-    .category{
-        margin: 40px;
-        .state{
-            width:100%;
-            .placement(center, flex-start);
-            .tab{
-                padding:5px;
-                font-size:1.4rem;
-                width: auto;
-                display: flex;
-                flex-wrap: nowrap;
-                // margin:0px 50px;
-                border:1px solid black;
-            }
-        }
-    }
 
     .contentContainer{
         height:100%;
@@ -96,6 +84,11 @@ header{
         display: flex;
         flex-flow: column wrap;
         margin: 10px 0px;
+
+        @media(max-width: 500px){
+            display: flex;
+            flex-flow: column wrap;
+        }
     }
 
     .empHolder{
@@ -107,9 +100,16 @@ header{
         display: none;
         img{
             height:90%;
+            @media(max-width: 500px){
+                height:20%;
+            }
         }
         h2{
             margin:0% 0% 5% 20%;
+            @media(max-width: 500px){
+                font-size: 2rem;
+                margin:0px;
+            }
         }
         h3{
             font-size:2rem;
@@ -117,6 +117,14 @@ header{
         }
         p{
             padding:10px;
+        }
+
+        .txtContainer{
+            height:100%;
+        }
+
+        @media(max-width: 500px){
+            margin-top:30px
         }
     }
 
@@ -128,8 +136,8 @@ header{
     .left-button, .right-button{
         // border: 2px solid red;
         // background-color:red;
-        height:50px;
-        width:50px;
+        height:30px;
+        width:30px;
         transition: .1s;
         float: left;
         box-shadow: -2px 2px 0 lighten(black, 10%);
@@ -140,6 +148,13 @@ header{
     }
     .right-button{
         transform: rotate(225deg);
+    }
+
+    @media(max-width: 500px){
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: auto;
     }
 
 }

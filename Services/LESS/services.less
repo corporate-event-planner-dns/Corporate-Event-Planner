@@ -19,19 +19,49 @@ header{
     .menuBTN{
         background-color:lighten( black, 20%);
         height: 4%;
-        
     }
+
     border: 1px solid black;
     width:100%;
     ul{
         width: 100%;
         .placement(space-evenly, center);
         font-size: 1.7rem;
+
+
         a{
             text-decoration: none;
             color:black;
         }
 
+
+        li{
+            @media(max-width: 500px){
+                border-bottom: 1px solid black;
+                // margin: 5px 0px 5px 0px;
+                width:100%;
+                text-align: center;
+                padding:5px 0px;
+                &:hover{
+                    font-size:2rem;
+                    background-color: gray;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        @media (max-width:500px) {
+        display: flex;
+        flex-flow: column wrap;   
+
+        }
+
+    }
+
+    @media(max-width:500px){
+    display: flex;
+    flex-direction: column-reverse;
+    border: 0px;
     }
 }
 
@@ -80,6 +110,9 @@ header{
         border-radius: 10px;
         background-color: white;
         opacity: 0.8;
+        @media(max-width: 500px){
+            overflow: auto;
+        }
     }
     .content:hover{
         cursor: pointer;
